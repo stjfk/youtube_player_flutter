@@ -234,7 +234,7 @@ class _RawYoutubePlayerState extends State<RawYoutubePlayer>
             body {
                 margin: 0;
                 padding: 0;
-                background-color: #000000;
+                background-color: #ff0000;
                 overflow: hidden;
                 position: fixed;
                 height: 100%;
