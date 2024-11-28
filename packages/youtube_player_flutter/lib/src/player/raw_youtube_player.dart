@@ -305,7 +305,7 @@ class _RawYoutubePlayerState extends State<RawYoutubePlayer>
             function startSendCurrentTimeInterval() {
                 timerId = setInterval(function () {
                     window.flutter_inappwebview.callHandler('VideoTime', player.getCurrentTime(), player.getVideoLoadedFraction());
-                }, 100);
+                }, 10000);
             }
 
             function play() {
