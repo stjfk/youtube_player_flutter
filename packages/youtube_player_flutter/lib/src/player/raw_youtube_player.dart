@@ -274,7 +274,7 @@ class _RawYoutubePlayerState extends State<RawYoutubePlayer>
                         'end': ${controller!.flags.endAt}
                     },
                     events: {
-                        onReady: function(event) { window.flutter_inappwebview.callHandler('Ready'); },
+                        onReady: function(event) { window.flutter_inappwebview.callHandler('Ready'); player.setVolume(0);},
                         onStateChange: function(event) { sendPlayerStateChange(event.data); },
                         onPlaybackQualityChange: function(event) { window.flutter_inappwebview.callHandler('PlaybackQualityChange', event.data); },
                         onPlaybackRateChange: function(event) { window.flutter_inappwebview.callHandler('PlaybackRateChange', event.data); },
